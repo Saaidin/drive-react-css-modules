@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Hero.module.css';
-import { AiOutlineSearch } from 'react-icons/ai';
+import { AiOutlineSearch } from "react-icons/ai";
 
 const Hero = () => {
   return (
@@ -17,16 +17,16 @@ const Hero = () => {
         <div className={styles.from}>
           <span className={styles.border}></span>
           <label>From</label>
-          <input type="date" />
+          <input type='date'/>
         </div>
         <div className={styles.until}>
           <span className={styles.border}></span>
           <label>Until</label>
-          <input type='date' />
+          <input type='date'/>
         </div>
         <div className={styles.search_btn}>
           <button className={styles.btn}>Search for cars</button>
-          <AiOutlineSearch size={25} className={styles.icon} />
+          <AiOutlineSearch size={25} className={styles.icon}/>
         </div>
       </form>
     </div>

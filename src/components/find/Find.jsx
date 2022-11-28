@@ -3,12 +3,11 @@ import styles from './Find.module.css';
 import Card from './Card';
 
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import {Swiper, SwiperSlide} from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-
 
 const Find = () => {
   return (
@@ -45,15 +44,14 @@ const Find = () => {
               slidesPerView: 5,
             },
           }}
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
+          pagination={{clickable: true}}
+          scrollbar={{draggable: true}}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
         >
           <SwiperSlide>
             <Card
-              image='https://images.unsplash.com/photo-1599912027806-cfec9f5944b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGF1ZGl8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
-              make='Audi'
+              image='https://images.unsplash.com/photo-1599912027806-cfec9f5944b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGF1ZGl8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60' make='Audi'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -64,8 +62,8 @@ const Find = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Card
-              image='https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2hldnJvbGV0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'
-              make='Chevrolet'
+               image='https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2hldnJvbGV0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'
+               make='Chevrolet'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -80,7 +78,6 @@ const Find = () => {
               make='Nissan'
             />
           </SwiperSlide>
-
           <SwiperSlide>
             <Card
               image='https://images.unsplash.com/photo-1619682817481-e994891cd1f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRveW90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'

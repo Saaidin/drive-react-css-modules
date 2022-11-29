@@ -17,12 +17,12 @@ const Hero = () => {
         <div className={styles.from}>
           <span className={styles.border}></span>
           <label>From</label>
-          <input type='date'/>
+          <input type='date' className="text-black/50"/>
         </div>
         <div className={styles.until}>
           <span className={styles.border}></span>
           <label>Until</label>
-          <input type='date'/>
+          <input type='date' className="text-black/50"/>
         </div>
         <div className={styles.search_btn}>
           <button className={styles.btn}>Search for cars</button>

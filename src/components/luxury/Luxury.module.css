@@ -1,72 +1,46 @@
 .luxury {
-  max-width: 1040px;
-  margin: auto;
-  padding: 5rem 1rem;
+  @apply max-w-[1040px] m-auto py-[5rem] px-[1rem];
 }
 
 .luxury .container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  padding: 4rem 0;
+  @apply grid grid-cols-4 gap-[1rem] py-[4rem] px-0;
 }
 
 .heading h1 {
-  font-size: 4rem;
-  text-align: center;
-  padding: 2rem;
+  @apply text-[4rem] text-center p-[2rem];
 }
 
 .heading p {
-  text-align: center;
+  @apply text-center;
 }
 
 .text_bg {
-  background: rgba(171, 197, 255, 0.502);
-  height: 30px;
-  max-width: 650px;
-  margin: auto;
-  position: absolute;
-  left: 0;
-  right: 0;
+  @apply bg-blue-rgba-2 h-[30px] max-w-[650px] m-auto absolute inset-x-0;
 }
 
 .text_bg p {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-top: -0.6rem;
+  @apply text-[1.4rem] font-[600] mt-[-0.6rem];
 }
 
 .card {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  @apply w-full border rounded-[10px] shadow-boxsha-1;
 }
 
 .card img {
-  width: 100%;
-  height: 250px;
-
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  object-fit: cover;
+  @apply w-full h-[250px] border rounded-t-[10px] object-cover;
 }
 
 .card .content {
-  text-align: center;
-  padding: 1rem;
-  font-size: 1rem;
+  @apply text-center p-[1rem] text-[1rem];
 }
 
 @media screen and (max-width: 768px) {
   .luxury .container {
-    grid-template-columns: repeat(2, 1fr);
+    @apply grid-cols-2;
   }
 
   .heading h1 {
-    font-size: 3rem;
-    text-align: center;
-    padding: 2rem;
+    @apply text-[3rem] text-center p-[2rem];
   }
 
 
@@ -74,6 +48,6 @@
 
 @media screen and (max-width: 500px) {
   .luxury .container {
-    grid-template-columns: 1fr;
+    @apply grid-cols-1;
   }
 }
